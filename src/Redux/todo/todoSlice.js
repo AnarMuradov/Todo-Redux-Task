@@ -15,9 +15,9 @@ export const TodoSlice = createSlice({
     },
     edit: (state, action) => {
     const edit =state.value.findIndex((x) => x.id === action.payload.id)
-    if(edit !== -1){
+  
       state.value[edit]=action.payload
-    }
+ 
     },
   },
 });
